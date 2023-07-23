@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './../styles/login.css'
+import axios from 'axios';
 
 
 
@@ -92,46 +93,50 @@ const Login = () => {
     useEffect(() => {
         const storedUsername = localStorage.getItem('rememberedUsername');
         const storedPassword = localStorage.getItem('rememberedPassword');
-    
+
         if (storedUsername && storedPassword) {
-          setUsername(storedUsername);
-          setPassword(storedPassword);
-          setRememberMe(true);
+            setUsername(storedUsername);
+            setPassword(storedPassword);
+            setRememberMe(true);
         }
-      }, []);
+    }, []);
 
     const handleLogin = async (event) => {
         event.preventDefault();
-    
+
         try {
-          const response = await fetch('src/data/users.json'); 
-          if (!response.ok) {
-            throw new Error('Failed to load users data');
-          }
-          const data = await response.json();
- 
-          const usuarioEncontrado = data.users.find(
-            (user) => user.username === username && user.password === password
-          );
-    
-          if (usuarioEncontrado) {
+            const response = await fetch('src/data/users.json');
+            if (!response.ok) {
+                throw new Error('Failed to load users data');
+            }
+            const data = await response.json();
 
-            console.log('¡Inició sesión correctamente!');
-            //llevar a la otra pagina
-          } else {
+            const usuarioEncontrado = data.users.find(
+                (user) => user.username === username && user.password === password
+            );
 
-            setError('Nombre de usuario o contraseña incorrectos.');
-            console.log('Inicio de sesión fallido');
-          }
+            if (usuarioEncontrado) {
+
+                axios.post('http://localhost:3030/profesores', { username, password });
+                // console.log('¡Inició sesión correctamente!');
+                //llevar a la otra pagina
+
+
+            } else {
+
+                setError('Nombre de usuario o contraseña incorrectos.');
+
+            }
         } catch (error) {
-          setError('Error al cargar los datos de usuarios.');
-          console.error('Error al cargar los datos de usuarios:', error);
+            setError('Error al cargar los datos de usuarios.');
+            console.error('Error al cargar los datos de usuarios:', error);
         }
-      };
+    };
 
     return (
-        <div className='container-login'>
-            <nav >
+        <div className='login-login'>
+            <div className='container-login'>
+                {/* <nav >
                 <ul>
                     <li>
                         <details role="list" dir="rtl">
@@ -145,59 +150,60 @@ const Login = () => {
                     </li>
 
                 </ul>
-            </nav>
+            </nav> */}
 
-            <main className="" >
-                <article className="grid login-container">
-                    <div>
-                        <hgroup>
-                            <h1>Inicie Sesión</h1>
-                            <h2>Rellene los siguientes campos</h2>
-                        </hgroup>
-                        <form onSubmit={handleLogin}>
-                            <input
-                                type="text"
-                                name="login"
-                                placeholder="Login"
-                                aria-label="Login"
-                                autoComplete="nickname"
-                                required
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
-                            />
-                            <input
-                                type="password"
-                                name="password"
-                                placeholder="Password"
-                                aria-label="Password"
-                                autoComplete="current-password"
-                                required
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
+                <main className="" >
+                    <article className="grid login-container">
+                        <div>
+                            <hgroup>
+                                <h1>Inicie Sesión</h1>
+                                <h2>Rellene los siguientes campos</h2>
+                            </hgroup>
+                            <form onSubmit={handleLogin}>
+                                <input
+                                    type="text"
+                                    name="login"
+                                    placeholder="Login"
+                                    aria-label="Login"
+                                    autoComplete="nickname"
+                                    required
+                                    value={username}
+                                    onChange={(e) => setUsername(e.target.value)}
+                                />
+                                <input
+                                    type="password"
+                                    name="password"
+                                    placeholder="Password"
+                                    aria-label="Password"
+                                    autoComplete="current-password"
+                                    required
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
 
-                            <fieldset>
-                                <label htmlFor="remember">
-                                    <input 
-                                        type="checkbox" 
-                                        role="switch" 
-                                        id="remember" 
-                                        name="remember"
-                                        checked={rememberMe}
-                                        onChange={(e) => setRememberMe(e.target.checked)}
-                                      />
-                                    Recuérdame
-                                </label>
-                            </fieldset>
-                            <button type="submit" className="contrast" onClick={handleLogin}>Acceder</button>
-                        </form>
-                        {error && <p>{error}</p>}
-                    </div>
-                    <div className='login-image'>
-                        <img src="../public/imag.jpg" alt="" />
-                    </div>
-                </article>
-            </main>
+                                <fieldset>
+                                    <label htmlFor="remember">
+                                        <input
+                                            type="checkbox"
+                                            role="switch"
+                                            id="remember"
+                                            name="remember"
+                                            checked={rememberMe}
+                                            onChange={(e) => setRememberMe(e.target.checked)}
+                                        />
+                                        Recuérdame
+                                    </label>
+                                </fieldset>
+                                <button type="submit" className="contrast" onClick={handleLogin}>Acceder</button>
+                            </form>
+                            {error && <p>{error}</p>}
+                        </div>
+                        <div className='login-image'>
+                            <img src="../public/imag.jpg" alt="" />
+                        </div>
+                    </article>
+                </main>
+            </div>
         </div>
     )
 }

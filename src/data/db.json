@@ -1,0 +1,304 @@
+{
+  "profesores": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "edad": "48",
+      "genero": "Masculino",
+      "titulo": "Licenciado en Educación",
+      "especialidad": "Matemáticas",
+      "experiencia": "8 años",
+      "materias": [
+        "Álgebra",
+        "Geometría"
+      ],
+      "telefono": "1234567890",
+      "correo": "juan.perez@example.com"
+    },
+    {
+      "id": 2,
+      "nombre": "María Rodríguez",
+      "edad": 40,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Ciencias Sociales",
+      "especialidad": "Historia",
+      "experiencia": "12 años",
+      "materias": [
+        "Historia Universal",
+        "Historia del Arte"
+      ],
+      "telefono": "9876543210",
+      "correo": "maria.rodriguez@example.com"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos Gómez",
+      "edad": 28,
+      "genero": "Masculino",
+      "titulo": "Ingeniero en Sistemas",
+      "especialidad": "Informática",
+      "experiencia": "5 años",
+      "materias": [
+        "Programación",
+        "Bases de Datos"
+      ],
+      "telefono": "5555555555",
+      "correo": "carlos.gomez@example.com"
+    },
+    {
+      "id": 4,
+      "nombre": "Ana López",
+      "edad": 32,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Ciencias Naturales",
+      "especialidad": "Biología",
+      "experiencia": "10 años",
+      "materias": [
+        "Biología Celular",
+        "Ecología"
+      ],
+      "telefono": "7890123456",
+      "correo": "ana.lopez@example.com"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro Martínez",
+      "edad": 45,
+      "genero": "Masculino",
+      "titulo": "Doctor en Física",
+      "especialidad": "Física Teórica",
+      "experiencia": "20 años",
+      "materias": [
+        "Física Cuántica",
+        "Mecánica Clásica"
+      ],
+      "telefono": "9876543210",
+      "correo": "pedro.martinez@example.com"
+    },
+    {
+      "id": 6,
+      "nombre": "Laura González",
+      "edad": 29,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Idiomas",
+      "especialidad": "Inglés",
+      "experiencia": "6 años",
+      "materias": [
+        "Inglés Avanzado",
+        "Gramática Inglesa"
+      ],
+      "telefono": "5555555555",
+      "correo": "laura.gonzalez@example.com"
+    },
+    {
+      "id": 7,
+      "nombre": "Jorge Ramírez",
+      "edad": 38,
+      "genero": "Masculino",
+      "titulo": "Licenciado en Economía",
+      "especialidad": "Economía Internacional",
+      "experiencia": "15 años",
+      "materias": [
+        "Macroeconomía",
+        "Comercio Internacional"
+      ],
+      "telefono": "1234567890",
+      "correo": "jorge.ramirez@example.com"
+    },
+    {
+      "id": 8,
+      "nombre": "Sofía Herrera",
+      "edad": 42,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Educación Física",
+      "especialidad": "Educación Física y Deportes",
+      "experiencia": "18 años",
+      "materias": [
+        "Educación Física",
+        "Deportes"
+      ],
+      "telefono": "7890123456",
+      "correo": "sofia.herrera@example.com"
+    },
+    {
+      "id": 9,
+      "nombre": "Andrés Castro",
+      "edad": 31,
+      "genero": "Masculino",
+      "titulo": "Licenciado en Arte",
+      "especialidad": "Artes Plásticas",
+      "experiencia": "7 años",
+      "materias": [
+        "Pintura",
+        "Dibujo"
+      ],
+      "telefono": "9876543210",
+      "correo": "andres.castro@example.com"
+    },
+    {
+      "id": 10,
+      "nombre": "Fernanda Torres",
+      "edad": 27,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Música",
+      "especialidad": "Música Clásica",
+      "experiencia": "5 años",
+      "materias": [
+        "Teoría Musical",
+        "Piano"
+      ],
+      "telefono": "5555555555",
+      "correo": "fernanda.torres@example.com"
+    },
+    {
+      "id": 11,
+      "nombre": "Ricardo Mendoza",
+      "edad": 39,
+      "genero": "Masculino",
+      "titulo": "Doctor en Ciencias",
+      "especialidad": "Química",
+      "experiencia": "19 años",
+      "materias": [
+        "Química Orgánica",
+        "Química Inorgánica"
+      ],
+      "telefono": "1234567890",
+      "correo": "ricardo.mendoza@example.com"
+    },
+    {
+      "id": 12,
+      "nombre": "Gabriela Romero",
+      "edad": 33,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Letras",
+      "especialidad": "Literatura",
+      "experiencia": "11 años",
+      "materias": [
+        "Literatura Latinoamericana",
+        "Teoría Literaria"
+      ],
+      "telefono": "7890123456",
+      "correo": "gabriela.romero@example.com"
+    },
+    {
+      "id": 13,
+      "nombre": "Héctor Ortega",
+      "edad": 41,
+      "genero": "Masculino",
+      "titulo": "Licenciado en Psicología",
+      "especialidad": "Psicología Clínica",
+      "experiencia": "17 años",
+      "materias": [
+        "Psicología del Desarrollo",
+        "Psicoterapia"
+      ],
+      "telefono": "9876543210",
+      "correo": "hector.ortega@example.com"
+    },
+    {
+      "id": 14,
+      "nombre": "Daniela Vargas",
+      "edad": 30,
+      "genero": "Femenino",
+      "titulo": "Ingeniera en Computación",
+      "especialidad": "Informática",
+      "experiencia": "8 años",
+      "materias": [
+        "Programación Web",
+        "Bases de Datos"
+      ],
+      "telefono": "5555555555",
+      "correo": "daniela.vargas@example.com"
+    },
+    {
+      "id": 15,
+      "nombre": "Raúl Contreras",
+      "edad": 37,
+      "genero": "Masculino",
+      "titulo": "Licenciado en Economía",
+      "especialidad": "Economía Financiera",
+      "experiencia": "14 años",
+      "materias": [
+        "Economía Monetaria",
+        "Finanzas Corporativas"
+      ],
+      "telefono": "1234567890",
+      "correo": "raul.contreras@example.com"
+    },
+    {
+      "id": 16,
+      "nombre": "Carolina Navarro",
+      "edad": 36,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Ciencias de la Comunicación",
+      "especialidad": "Comunicación Digital",
+      "experiencia": "13 años",
+      "materias": [
+        "Redes Sociales",
+        "Periodismo Digital"
+      ],
+      "telefono": "7890123456",
+      "correo": "carolina.navarro@example.com"
+    },
+    {
+      "id": 17,
+      "nombre": "Hugo Méndez",
+      "edad": 43,
+      "genero": "Masculino",
+      "titulo": "Licenciado en Educación Física",
+      "especialidad": "Educación Física y Recreación",
+      "experiencia": "19 años",
+      "materias": [
+        "Educación Física Escolar",
+        "Actividades Recreativas"
+      ],
+      "telefono": "9876543210",
+      "correo": "hugo.mendez@example.com"
+    },
+    {
+      "id": 18,
+      "nombre": "Lucía Castro",
+      "edad": 31,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Filosofía",
+      "especialidad": "Filosofía Contemporánea",
+      "experiencia": "9 años",
+      "materias": [
+        "Ética",
+        "Filosofía Política"
+      ],
+      "telefono": "5555555555",
+      "correo": "lucia.castro@example.com"
+    },
+    {
+      "id": 19,
+      "nombre": "Oscar Soto",
+      "edad": 34,
+      "genero": "Masculino",
+      "titulo": "Licenciado en Derecho",
+      "especialidad": "Derecho Penal",
+      "experiencia": "10 años",
+      "materias": [
+        "Derecho Penal Especial",
+        "Derecho Procesal"
+      ],
+      "telefono": "1234567890",
+      "correo": "oscar.soto@example.com"
+    },
+    {
+      "id": 20,
+      "nombre": "Elena Ríos",
+      "edad": 29,
+      "genero": "Femenino",
+      "titulo": "Licenciada en Arte",
+      "especialidad": "Artes Escénicas",
+      "experiencia": "7 años",
+      "materias": [
+        "Teatro",
+        "Actuación"
+      ],
+      "telefono": "7890123456",
+      "correo": "elena.rios@example.com"
+    }
+  ]
+}
