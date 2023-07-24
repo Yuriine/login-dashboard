@@ -1,10 +1,82 @@
 
-body{
-   
+*{
+    font-size: 15px ;
 }
 .tableA{
     padding: 100px;
+    font-size: 15px;
 }
-.container-dashboard{
-    overflow: visible !important;
+.tableA thead{
+    color: #c82333;
+    background: #c82333;
 }
+.container-dashboard {
+  background: url('../../public/font.png') no-repeat center center fixed;
+
+  }
+  
+  .add {
+    margin-bottom: 10px;
+  }
+  
+  .add a {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add a:hover {
+    background-color: #0056b3;
+  }
+  
+  .logout {
+    margin-bottom: 10px;
+  }
+  
+  .tableA {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableA th,
+  .tableA td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tableA th:last-child,
+  .tableA td:last-child {
+    text-align: center;
+  }
+  
+  .tableA a {
+    margin-right: 5px;
+    padding: 3px 6px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tableA a:hover {
+    background-color: #0056b3;
+  }
+  
+  .tableA button {
+    padding: 3px 6px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tableA button:hover {
+    background-color: #c82333;
+  }
+  

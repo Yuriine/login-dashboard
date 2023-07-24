@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './../styles/login.css'
 import axios from 'axios';
-
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
@@ -89,7 +89,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
     const [error, setError] = useState('');
-
+    const navigate = useNavigate();
     useEffect(() => {
         const storedUsername = localStorage.getItem('rememberedUsername');
         const storedPassword = localStorage.getItem('rememberedPassword');
@@ -117,10 +117,28 @@ const Login = () => {
 
             if (usuarioEncontrado) {
 
-                axios.post('http://localhost:3030/profesores', { username, password });
+                // axios.post('http://localhost:3030/profesores', { username, password });
                 // console.log('¡Inició sesión correctamente!');
                 //llevar a la otra pagina
+                navigate('/dashboard',
+                    {
+                        state: {
+                            username: username,
+                            logged: true,
 
+                        }
+                    }
+                );
+
+                // // Antes de navegar a la página "/dashboard"
+                // localStorage.setItem('userData', JSON.stringify({ username: username, logged: true }));
+
+                // // Navegar a la página "/dashboard"
+                // navigate('/dashboard');
+
+                // // En el componente "Dashboard" o en cualquier otra página
+                // const userData = JSON.parse(localStorage.getItem('userData'));
+                // console.log(userData); // Mostrará { username: 'John', logged: true }
 
             } else {
 
@@ -150,9 +168,9 @@ const Login = () => {
                     </li>
 
                 </ul>
-            </nav> */}
+                </nav> */}
 
-                <main className="" >
+                <main className="login-login__login" >
                     <article className="grid login-container">
                         <div>
                             <hgroup>

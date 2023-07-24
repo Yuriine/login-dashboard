@@ -2,7 +2,7 @@ import React from 'react'
 import './../styles/font.css'
 export default function Font() {
   return (
-    <div className="container container-font">
+    <div className="containerDAW container-font">
         <div className="row">
             <div className="hexagon"></div>
             <div className="hexagon"></div>

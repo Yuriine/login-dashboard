@@ -4,9 +4,11 @@ import Dashboard from "../pages/Dashboard";
 import Home from "../App";
 import Add from "../pages/Add";
 import Update from "../components/Update";
-import Delete from "../components/Delete";
+import NavBar from "../components/NavBar";
+import PrivateRoute from "./PrivateRoute";
 
-const router = createBrowserRouter(
+
+const router = createBrowserRouter(     
 [
         
         {
@@ -15,20 +17,27 @@ const router = createBrowserRouter(
         },
         {
             path: "/dashboard",
-            element: <Dashboard />,
+            element: (
+                <PrivateRoute>
+                    <Dashboard />
+                </PrivateRoute>
+                
+             ) ,
         },
         {
             path: "/create",
-            element: <Add />,
+            element: (
+                <PrivateRoute>
+                    <Add />
+                </PrivateRoute>
+                
+             ) ,
         },
         {
             path: "/update/:id",
             element: <Update />,
         },
-        {
-            path: "/delete/:id",
-            element: <Delete />,
-        },
+        
     ],
 );
 

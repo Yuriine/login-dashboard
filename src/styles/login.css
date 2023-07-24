@@ -98,7 +98,8 @@ article div:nth-of-type(2) {
 }
 .login-container{
     background: rgba(76, 77, 76, 0.295);
-    
+    display: flex;
+    align-items: center;
 }
 
 
@@ -108,12 +109,11 @@ article div:nth-of-type(2) {
     border: 1px solid var(--primary);
     color: aliceblue;
 }
+.login-login__login{
+}
 .login-login{
   margin: 0 !important;
   padding: 0 !important;
-  width: 100vw;
-  height: 100vh;
-  border: white 5px solid;
   
   position: absolute;
   top: 0;

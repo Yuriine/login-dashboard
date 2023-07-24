@@ -1,11 +1,15 @@
 import axios from 'axios';
 import React, {useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 useNavigate
 
 const Add = () => {
 
+  const location = useLocation();
+  const { state } = location;
   const navigate = useNavigate();
+  console.log('hola', state);
+
   const [inputs, setInputs] = useState({nombre: '', edad: '', genero: '', titulo: '', especialidad: '', experiencia: '', materias: '', telefono: '', correo: ''});
   const handleLogin = (event) => {
     event.preventDefault();
@@ -13,7 +17,15 @@ const Add = () => {
     .then((res) => {
       console.log(res);
       alert('Se agregaron correctamente los datos');
-      navigate('/dashboard');
+      navigate('/dashboard',
+                    {
+                        state: {
+                            
+                            logged: true,
+
+                        }
+                    }
+                );
     })
     .catch((err) => {
       console.log(err);
@@ -45,7 +57,7 @@ const Add = () => {
         <label htmlFor="correo">Correo</label>
         <input type="email" id="correo" name="correo" value={inputs.correo} onChange={e=>setInputs({...inputs, correo: e.target.value})} />
 
-        <button type="submit" className="contrast" onClick={handleLogin}>Acceder</button>
+        <button type="submit" className="contrast" onClick={handleLogin}>Añadir</button>
       </form>
 
     </div>

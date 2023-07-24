@@ -1,15 +1,19 @@
 body{
-    
+   
 }
-.container {
-    margin: -100px;
-    
-    position: absolute;
+.containerDAW {
+   
+    width: 100vw;
     height: 100vh;
-    
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0 ;
+    bottom: 0;
     z-index: 2;
-     animation: animate 4s linear infinite; 
-    
+    animation: animate 4s linear infinite; 
+        
 }
 @keyframes animate {
     0%{

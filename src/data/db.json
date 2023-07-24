@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombre": "Juan Pérez",
-      "edad": "48",
+      "edad": "25",
       "genero": "Masculino",
       "titulo": "Licenciado en Educación",
       "especialidad": "Matemáticas",
@@ -299,6 +299,54 @@
       ],
       "telefono": "7890123456",
       "correo": "elena.rios@example.com"
+    },
+    {
+      "nombre": "Adipisci deleniti cu",
+      "edad": "Veniam veniam dolo",
+      "genero": "Quos dolore facere n",
+      "titulo": "Laborum Magni molli",
+      "especialidad": "Et sint deserunt qu",
+      "experiencia": "Deserunt natus dolor",
+      "materias": "97",
+      "telefono": "Ex itaque deserunt l",
+      "correo": "jaraxukir@mailinator.com",
+      "id": 21
+    },
+    {
+      "nombre": "At sapiente occaecat",
+      "edad": "Alias qui ea corpori",
+      "genero": "Nesciunt corrupti ",
+      "titulo": "Ullamco est duis rer",
+      "especialidad": "Qui ratione anim sun",
+      "experiencia": "Commodi irure unde d",
+      "materias": "18",
+      "telefono": "Non aut itaque ea ma",
+      "correo": "kocedado@mailinator.com",
+      "id": 22
+    },
+    {
+      "nombre": "At sapiente occaecat",
+      "edad": "Alias qui ea corpori",
+      "genero": "Nesciunt corrupti ",
+      "titulo": "Ullamco est duis rer",
+      "especialidad": "Qui ratione anim sun",
+      "experiencia": "Commodi irure unde d",
+      "materias": "18",
+      "telefono": "Non aut itaque ea ma",
+      "correo": "kocedado@mailinator.com",
+      "id": 23
+    },
+    {
+      "nombre": "Sunt amet proident",
+      "edad": "Atque molestias dolo",
+      "genero": "Nulla et voluptate p",
+      "titulo": "Blanditiis aliqua A",
+      "especialidad": "Error id maxime eve",
+      "experiencia": "Dolor sed minus saep",
+      "materias": "72",
+      "telefono": "In pariatur Quibusd",
+      "correo": "jezavagu@mailinator.com",
+      "id": 24
     }
   ]
 }
