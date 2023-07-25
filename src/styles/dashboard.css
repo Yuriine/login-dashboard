@@ -7,21 +7,26 @@
     font-size: 15px;
 }
 .tableA thead{
-    color: #c82333;
-    background: #c82333;
+    text-align: center;
+    font-size: 15px;
 }
-.container-dashboard {
-  background: url('../../public/font.png') no-repeat center center fixed;
+.container-dashboard  {
+  /*encajar imagen del background*/
+  background: url(../../public/fondoTable.jpg) no-repeat center center fixed;
+  background-size: cover;
 
   }
-  
+  /* .container-dashboard{
+    background: #007bff;
+  } */
   .add {
     margin-bottom: 10px;
   }
   
   .add a {
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: transparent;
+    border: #0056b3 1px solid;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -55,7 +60,8 @@
   .tableA a {
     margin-right: 5px;
     padding: 3px 6px;
-    background-color: #007bff;
+    background-color: transparent;
+    border: #0056b3 1px solid;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -68,7 +74,8 @@
   
   .tableA button {
     padding: 3px 6px;
-    background-color: #dc3545;
+    background-color: transparent;
+    border: #18ad04 10px solid;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -79,4 +86,13 @@
   .tableA button:hover {
     background-color: #c82333;
   }
-  
+  .row-table{
+    transition: all 0.3s ease-in-out;
+  }
+  .row-table:hover{
+    background: black ;
+    
+  }
+  .row-table:hover td{
+    color: #fff;
+  }

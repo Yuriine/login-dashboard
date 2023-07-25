@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, {useEffect, useState} from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import {Link, useParams, useNavigate } from 'react-router-dom'
 
 const Update = () => {
 
@@ -30,7 +30,7 @@ const Update = () => {
             console.log(err);
         })
     }
-  return (
+  return (  
     <div>
       {/* a form with data of teachers */}
       <h1>Formulario de profesores</h1>
@@ -54,7 +54,7 @@ const Update = () => {
         <label htmlFor="correo">Correo</label>
         <input type="email" id="correo" name="correo" value={inputs.correo} onChange={e => setInputs({...inputs, correo: e.target.value})} />
 
-        <button type="submit" className="contrast" >Acceder</button>
+        <button type="submit" className="contrast" >Actualizar</button>
       </form>
 
     </div>

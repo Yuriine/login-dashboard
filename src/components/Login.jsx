@@ -117,7 +117,7 @@ const Login = () => {
 
             if (usuarioEncontrado) {
 
-                // axios.post('http://localhost:3030/profesores', { username, password });
+                axios.post('http://localhost:3030/profesores', { username, password });
                 // console.log('¡Inició sesión correctamente!');
                 //llevar a la otra pagina
                 navigate('/dashboard',
@@ -139,7 +139,7 @@ const Login = () => {
                 // // En el componente "Dashboard" o en cualquier otra página
                 // const userData = JSON.parse(localStorage.getItem('userData'));
                 // console.log(userData); // Mostrará { username: 'John', logged: true }
-
+                
             } else {
 
                 setError('Nombre de usuario o contraseña incorrectos.');
@@ -217,7 +217,11 @@ const Login = () => {
                             {error && <p>{error}</p>}
                         </div>
                         <div className='login-image'>
-                            <img src="../public/imag.jpg" alt="" />
+                            <img src="../public/fondo.jpg" alt="" />
+                            <div className='logo'>
+                            <img   src="../public/Logo.png" alt="" />
+                            <h2>Ingeniería de Sistemas</h2>
+                            </div>
                         </div>
                     </article>
                 </main>

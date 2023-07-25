@@ -92,9 +92,29 @@ article div:nth-of-type(2) {
 
 .login-image{
     background: transparent !important;
+    position: relative;
 }
 .login-image img{
-    
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+
+}
+.logo{
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: float 2s ease-in-out infinite;
+}
+.logo img{
+  height: 150px !important;
+  width: auto !important;
+}
+@keyframes float {
+  
 }
 .login-container{
     background: rgba(76, 77, 76, 0.295);

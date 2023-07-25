@@ -2,7 +2,7 @@
   "profesores": [
     {
       "id": 1,
-      "nombre": "Juan Pérez",
+      "nombre": "Juan Pérezqqeqwe",
       "edad": "25",
       "genero": "Masculino",
       "titulo": "Licenciado en Educación",
@@ -12,7 +12,7 @@
         "Álgebra",
         "Geometría"
       ],
-      "telefono": "1234567890",
+      "telefono": "123456789012",
       "correo": "juan.perez@example.com"
     },
     {
@@ -278,27 +278,9 @@
       "titulo": "Licenciado en Derecho",
       "especialidad": "Derecho Penal",
       "experiencia": "10 años",
-      "materias": [
-        "Derecho Penal Especial",
-        "Derecho Procesal"
-      ],
+      "materias": "Derecho Penal,Derechos Procesales",
       "telefono": "1234567890",
       "correo": "oscar.soto@example.com"
-    },
-    {
-      "id": 20,
-      "nombre": "Elena Ríos",
-      "edad": 29,
-      "genero": "Femenino",
-      "titulo": "Licenciada en Arte",
-      "especialidad": "Artes Escénicas",
-      "experiencia": "7 años",
-      "materias": [
-        "Teatro",
-        "Actuación"
-      ],
-      "telefono": "7890123456",
-      "correo": "elena.rios@example.com"
     },
     {
       "nombre": "Adipisci deleniti cu",
@@ -347,6 +329,62 @@
       "telefono": "In pariatur Quibusd",
       "correo": "jezavagu@mailinator.com",
       "id": 24
+    },
+    {
+      "nombre": "In voluptatibus eaqu",
+      "edad": "Eu nisi eos laudanti",
+      "genero": "Dolore ut optio aut",
+      "titulo": "Ut voluptate eveniet",
+      "especialidad": "Mollit nemo et nostr",
+      "experiencia": "Iusto autem molestia",
+      "materias": "Sunt sint voluptate",
+      "telefono": "Qui aliquid excepteu",
+      "correo": "capo@mailinator.com",
+      "id": 26
+    },
+    {
+      "nombre": "Voluptatem velit ha",
+      "edad": "Quasi odio nisi quis",
+      "genero": "Id non non aut dolor",
+      "titulo": "Harum dolores cum pr",
+      "especialidad": "Unde enim deleniti m",
+      "experiencia": "Officia natus elit ",
+      "materias": "Nulla irure perspici",
+      "telefono": "Reprehenderit exped",
+      "correo": "reqiraduma@mailinator.com",
+      "id": 27
+    },
+    {
+      "nombre": "",
+      "edad": "",
+      "genero": "",
+      "titulo": "",
+      "especialidad": "",
+      "experiencia": "",
+      "materias": "",
+      "telefono": "",
+      "correo": "",
+      "id": 28
+    },
+    {
+      "username": "admin",
+      "password": "password",
+      "id": 29
+    },
+    {
+      "username": "admin",
+      "password": "password",
+      "id": 30
+    },
+    {
+      "username": "admin",
+      "password": "password",
+      "id": 31
+    },
+    {
+      "username": "admin",
+      "password": "password",
+      "id": 32
     }
   ]
 }

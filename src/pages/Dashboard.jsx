@@ -11,8 +11,11 @@ const Dashboard = () => {
     const [records, setRecords] = useState([]);
 
 
-    const navigateTo = useNavigate();
-    
+        const navigateTo = useNavigate();
+        const { state } = navigateTo;
+        const location = useLocation();
+        console.log(state);
+
     useEffect(() => {
         axios.get('http://localhost:3030/profesores')
             .then((res) => {
@@ -36,43 +39,14 @@ const Dashboard = () => {
         }
     }
     
-    const handleAdd =  (event) => {
-        event.preventDefault();
-        try {
-
-                // axios.post('http://localhost:3030/profesores', { username, password });
-                // console.log('¡Inició sesión correctamente!');
-                //llevar a la otra pagina
-                navigateTo('/create',
-                    {
-                        state: {
-                            logged: true,
-
-                        }
-                    }
-                );
-
-                // // Antes de navegar a la página "/dashboard"
-                // localStorage.setItem('userData', JSON.stringify({ username: username, logged: true }));
-
-                // // Navegar a la página "/dashboard"
-                // navigate('/dashboard');
-
-                // // En el componente "Dashboard" o en cualquier otra página
-                // const userData = JSON.parse(localStorage.getItem('userData'));
-                // console.log(userData); // Mostrará { username: 'John', logged: true }
-
-        }
-        catch (error) {
-            console.error('Error al cargar los datos de usuarios:', error);
-        }
-    };
+    
         
     return (
 
-        <div className='container-dashboard'>
+        <div className='dashboard-body'>
+            <div className='container-dashboard'>
             <NavBar />  
-            <div className='Add'><Link onClick={handleAdd}>Añadir Nuevo</Link></div>
+            <div className='Add'><Link to={'/create'}>Añadir Nuevo</Link></div>
             <div>Cerrar Sesión</div>
             <table className='tableA'>
                 <thead>
@@ -88,7 +62,7 @@ const Dashboard = () => {
                 <tbody>
                     {
                         records.map((d, index) => (
-                            <tr key={index}>
+                            <tr key={index} className='row-table'>
                                 <td>{d.id}</td>
                                 <td>{d.nombre}</td>
                                 <td>{d.edad}</td>
@@ -109,6 +83,7 @@ const Dashboard = () => {
                 </tbody>
 
             </table>
+        </div>
         </div>
     );
 
